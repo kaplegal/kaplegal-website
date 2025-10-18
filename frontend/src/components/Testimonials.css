@@ -1,0 +1,240 @@
+/* Testimonials Section Styles */
+.testimonials-section {
+  /* Use the global dark background to avoid a lighter band between sections */
+  background-color: var(--background-color);
+  padding: 80px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Scrolling Testimonials Columns */
+.testimonials-columns {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 450px; /* Fixed height to show only 3 cards */
+  overflow: hidden;
+  position: relative;
+  margin-top: 40px;
+  gap: 20px; /* Added gap between columns */
+}
+
+.testimonials-column {
+  flex: 1;
+  padding: 0 15px;
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+}
+
+.testimonials-column:nth-child(2) {
+  width: 36%; /* Make middle column larger */
+}
+
+.testimonial-card-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.column-up {
+  animation: scrollUp 30s linear infinite;
+}
+
+.column-down {
+  animation: scrollDown 30s linear infinite;
+}
+
+/* Pause animation on hover */
+.testimonials-column:hover .testimonial-card-wrapper {
+  animation-play-state: paused;
+}
+
+@keyframes scrollUp {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-50%);
+  }
+}
+
+@keyframes scrollDown {
+  0% {
+    transform: translateY(-50%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.testimonial-card {
+  background-color: var(--light-gray); /* Dark surface to match theme */
+  padding: 20px 25px;
+  border-radius: 8px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+  position: relative;
+  min-width: 100%;
+  height: 280px; /* Increased height for cards */
+  margin-bottom: 30px;
+  flex-shrink: 0;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 2px solid var(--secondary-color); /* Gold border */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.5);
+  border-color: var(--secondary-color);
+}
+
+.quote-icon {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 24px;
+  color: var(--secondary-color);
+  opacity: 0.3;
+}
+
+.testimonial-card p {
+  font-size: 16px;
+  line-height: 1.7;
+  color: var(--text-color);
+  margin-bottom: 15px;
+  font-style: italic;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  line-clamp: 4;
+  -webkit-box-orient: vertical;
+}
+
+.client-info h4 {
+  font-size: 18px;
+  color: var(--secondary-color); /* Gold text for name */
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+.client-info p {
+  font-size: 14px;
+  color: #aaa; /* Lighter gray for better contrast on dark background */
+  margin: 0;
+  font-style: normal;
+  -webkit-line-clamp: 1;
+  line-clamp: 1;
+}
+
+/* Mobile carousel styles */
+.testimonial-carousel {
+  margin-top: 40px;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+/* Hide position/designation in mobile view */
+.testimonial-carousel .testimonial-author p {
+  display: none;
+}
+
+.testimonial-carousel .testimonial-author h4 {
+  color: var(--secondary-color);
+}
+
+.testimonial-slide {
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.testimonial-carousel .testimonial-card {
+  width: 100%;
+  max-width: 450px;
+  margin: 0 auto;
+  text-align: center;
+  align-items: center;
+  background-color: var(--light-gray);
+  border: 2px solid var(--secondary-color);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+}
+
+.carousel-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  background-color: transparent;
+  padding: 15px;
+}
+
+.carousel-control {
+  background-color: var(--primary-color); /* Changed to burgundy (primary color) */
+  color: white;
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background-color 0.3s ease;
+  aspect-ratio: 1/1;
+  min-width: 40px;
+  min-height: 40px;
+  max-width: 40px;
+  max-height: 40px;
+  padding: 0;
+}
+
+.carousel-control:hover {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 15px rgba(212, 175, 55, 0.4);
+}
+
+.carousel-indicators {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  padding: 0 10px;
+}
+
+.indicator {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #ccc;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.indicator.active {
+  background-color: var(--secondary-color);
+}
+
+/* Responsive styles */
+@media (max-width: 992px) {
+  .testimonials-grid {
+    grid-template-columns: 1fr;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

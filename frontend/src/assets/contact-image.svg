@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="600" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Dark background -->
+  <rect width="800" height="600" fill="#0a2c1f"/>
+  
+  <!-- Decorative elements -->
+  <path d="M0,0 L800,0 L800,600 L0,600 Z" fill="#0a2c1f"/>
+  <path d="M750,50 Q775,150 750,250 T750,450 Q775,550 750,600" stroke="#d4af37" stroke-width="2" fill="none"/>
+  <path d="M50,50 Q25,150 50,250 T50,450 Q25,550 50,600" stroke="#d4af37" stroke-width="2" fill="none"/>
+  
+  <!-- Scales of justice -->
+  <g transform="translate(400, 250)">
+    <!-- Balance beam -->
+    <rect x="-150" y="-5" width="300" height="10" fill="#d4af37"/>
+    
+    <!-- Center pillar -->
+    <rect x="-10" y="-5" width="20" height="150" fill="#d4af37"/>
+    <rect x="-30" y="145" width="60" height="10" fill="#d4af37"/>
+    <rect x="-40" y="155" width="80" height="10" fill="#d4af37"/>
+    <rect x="-50" y="165" width="100" height="10" fill="#d4af37"/>
+    
+    <!-- Left scale -->
+    <line x1="-150" y1="0" x2="-150" y2="80" stroke="#d4af37" stroke-width="2"/>
+    <circle cx="-150" cy="100" r="40" stroke="#d4af37" stroke-width="2" fill="none"/>
+    
+    <!-- Right scale -->
+    <line x1="150" y1="0" x2="150" y2="80" stroke="#d4af37" stroke-width="2"/>
+    <circle cx="150" cy="100" r="40" stroke="#d4af37" stroke-width="2" fill="none"/>
+  </g>
+  
+  <!-- Text elements -->
+  <text x="400" y="400" font-family="Arial" font-size="24" fill="#d4af37" text-anchor="middle">JUSTICE • INTEGRITY • EXCELLENCE</text>
+  
+  <!-- Decorative corners -->
+  <path d="M20,20 L80,20 L80,30 L30,30 L30,80 L20,80 Z" fill="#d4af37"/>
+  <path d="M720,20 L780,20 L780,80 L770,80 L770,30 L720,30 Z" fill="#d4af37"/>
+  <path d="M20,520 L30,520 L30,570 L80,570 L80,580 L20,580 Z" fill="#d4af37"/>
+  <path d="M720,570 L770,570 L770,520 L780,520 L780,580 L720,580 Z" fill="#d4af37"/>
+</svg>
