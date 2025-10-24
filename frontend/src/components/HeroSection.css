@@ -151,9 +151,16 @@
     font-size: 18px;
   }
 
+  .hero-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
   .hero-buttons .btn {
     width: 80%;
     max-width: 200px;
+    margin: 0 auto;
   }
 }
 
