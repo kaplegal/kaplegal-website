@@ -8,13 +8,6 @@ import axios from 'axios';
 const API_URL = `${import.meta.env.VITE_API_URL}/auth`;
 
 /**
- * IMPORTANT: The passkey for this admin panel is: KAP-LEGAL-ADMIN-2025
- * 
- * This passkey is used for initial setup. After first login, the passkey is stored
- * securely in the MongoDB database and can be changed through the admin interface.
- */
-
-/**
  * Check if the user is authenticated
  * @returns {boolean} - True if the user is authenticated
  */

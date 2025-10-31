@@ -8,27 +8,17 @@ const JWT_SECRET = process.env.JWT_SECRET;
 // Login with passkey
 exports.login = async (req, res) => {
   try {
-    console.log('Login attempt received');
-    console.log('Request body:', req.body);
-    
     const { passkey } = req.body;
     
     if (!passkey) {
-      console.log('No passkey provided');
       return res.status(400).json({ message: 'Passkey is required' });
     }
-    
-    console.log('Passkey received:', passkey);
-    console.log('Default passkey from env:', process.env.DEFAULT_ADMIN_PASSKEY);
     
     // Find admin user (we expect only one admin in this simple system)
     const admin = await Admin.findOne({ username: 'admin' });
     
-    console.log('Admin user found:', admin ? 'Yes' : 'No');
-    
     // If no admin exists yet, create one with the default passkey
     if (!admin && passkey === process.env.DEFAULT_ADMIN_PASSKEY) {
-      console.log('Creating new admin user with default passkey');
       const newAdmin = await Admin.createAdmin('admin', passkey);
       
       // Generate token
@@ -50,9 +40,7 @@ exports.login = async (req, res) => {
     
     // If admin exists, verify passkey
     if (admin) {
-      console.log('Attempting to verify passkey for existing admin');
       const isMatch = await admin.comparePassword(passkey);
-      console.log('Passkey match result:', isMatch);
       
       if (isMatch) {
         // Generate token
@@ -74,7 +62,6 @@ exports.login = async (req, res) => {
     }
     
     // If we get here, authentication failed
-    console.log('Authentication failed - invalid passkey');
     return res.status(401).json({ message: 'Invalid passkey' });
     
   } catch (error) {

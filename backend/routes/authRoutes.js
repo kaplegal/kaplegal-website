@@ -1,9 +1,10 @@
 const express = require('express');
 const router = express.Router();
 const authController = require('../controllers/authController');
+const { authLimiter } = require('../middleware/rateLimiter');
 
-// Login route
-router.post('/login', authController.login);
+// Login route (with stricter rate limiting)
+router.post('/login', authLimiter, authController.login);
 
 // Protected routes (require authentication)
 router.get('/me', authController.verifyToken, authController.getCurrentAdmin);

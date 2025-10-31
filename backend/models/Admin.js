@@ -29,11 +29,7 @@ const adminSchema = new mongoose.Schema({
 
 // Method to compare password
 adminSchema.methods.comparePassword = async function(password) {
-  console.log('comparePassword called with:', password);
-  console.log('Stored hash:', this.passwordHash);
-  const result = await bcrypt.compare(password, this.passwordHash);
-  console.log('bcrypt.compare result:', result);
-  return result;
+  return await bcrypt.compare(password, this.passwordHash);
 };
 
 // Static method to create admin with hashed password
