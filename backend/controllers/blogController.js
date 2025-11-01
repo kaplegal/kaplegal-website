@@ -26,13 +26,18 @@ exports.getFeaturedBlogs = async (req, res) => {
   try {
     const limit = parseInt(req.query.limit) || 3;
     
+    console.log('Fetching featured blogs with limit:', limit);
+    
     const blogs = await Blog.find({ isPublished: true })
       .sort({ publishedAt: -1 })
       .limit(limit)
       .select('title slug category summary image publishedAt');
     
+    console.log('Found blogs:', blogs.length);
+    
     res.status(200).json(blogs);
   } catch (error) {
+    console.error('Error in getFeaturedBlogs:', error);
     res.status(500).json({ message: 'Error fetching featured blogs', error: error.message });
   }
 };
