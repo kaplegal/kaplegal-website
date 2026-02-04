@@ -82,6 +82,15 @@ app.use('/api/contact', contactRoutes);
 app.use('/api/blogs', blogRoutes);
 app.use('/api/auth', authRoutes);
 
+// Health check endpoint for uptime monitoring
+app.get('/health', (req, res) => {
+  res.status(200).json({
+    status: 'OK',
+    timestamp: new Date().toISOString(),
+    service: 'KAP LEGAL LLP API'
+  });
+});
+
 // Basic route for testing
 app.get('/', (req, res) => {
   res.send('KAP LEGAL LLP API is running');

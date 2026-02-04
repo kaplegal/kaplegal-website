@@ -14,7 +14,7 @@ const DisclaimerPopup = ({ onAccept }) => {
             relationship.
           </p>
           <p>
-            KJ LAW PARTNERS strictly adheres to the ethical standards laid down by the Bar Council of India 
+            KAP LEGAL LLP strictly adheres to the ethical standards laid down by the Bar Council of India 
             and does not engage in any form of unethical solicitation or advertising. Visitors are encouraged 
             to seek professional legal advice tailored to their specific circumstances.
           </p>

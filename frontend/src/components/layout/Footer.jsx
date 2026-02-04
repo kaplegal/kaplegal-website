@@ -60,11 +60,11 @@ const Footer = () => {
             <div className="contact-details" style={{ textAlign: 'left', margin: '15px 0' }}>
               <p className="contact-item" style={{ display: 'flex', alignItems: 'center', justifyContent: 'flex-start', marginBottom: '8px' }}>
                 <BsTelephone style={{ color: '#D4AF37', marginRight: '10px', fontSize: '18px' }} />
-                <span>011-49077595, 9810098159, 9810098154</span>
+                <span>01149077595, 9810098154</span>
               </p>
               <p className="contact-item" style={{ display: 'flex', alignItems: 'center', justifyContent: 'flex-start', marginBottom: '8px' }}>
                 <FaEnvelope style={{ color: '#D4AF37', marginRight: '10px', fontSize: '18px' }} />
-                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=karwasraandassociates@gmail.com" target="_blank" rel="noopener noreferrer" style={{ color: 'inherit', textDecoration: 'none', transition: 'color 0.3s ease' }} onMouseOver={(e) => e.target.style.color = '#D4AF37'} onMouseOut={(e) => e.target.style.color = 'inherit'}>karwasraandassociates@gmail.com</a>
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=kaplegalllp@gmail.com" target="_blank" rel="noopener noreferrer" style={{ color: 'inherit', textDecoration: 'none', transition: 'color 0.3s ease' }} onMouseOver={(e) => e.target.style.color = '#D4AF37'} onMouseOut={(e) => e.target.style.color = 'inherit'}>kaplegalllp@gmail.com</a>
               </p>
             </div>
             <div className="social-icons">
@@ -77,7 +77,7 @@ const Footer = () => {
               <a href="https://in.linkedin.com/company/kj-law-partners-llp" className="social-icon" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
                 <FaLinkedinIn style={{ fontSize: '20px' }} />
               </a>
-              <a href="https://mail.google.com/mail/?view=cm&fs=1&to=karwasraandassociates@gmail.com" className="social-icon" target="_blank" rel="noopener noreferrer" aria-label="Email">
+              <a href="https://mail.google.com/mail/?view=cm&fs=1&to=kaplegalllp@gmail.com" className="social-icon" target="_blank" rel="noopener noreferrer" aria-label="Email">
                 <FaEnvelope style={{ fontSize: '20px' }} />
               </a>
             </div>
@@ -131,15 +131,13 @@ const Footer = () => {
             <FaLocationDot style={{ color: '#D4AF37', marginRight: '8px', fontSize: '16px' }} />
             <div>
               <strong>Office Address:</strong><br />
-              B-2/201, basement -1,<br />
-              safdarjung enclave on Sara Mathews road<br />
-              near st Mary school
+              B-2/201, LGF, Safdarjung enclave, New Delhi
             </div>
           </div>
         </div>
 
         <div className="footer-bottom">
-          <p>&copy; {currentYear} KJ LAW PARTNERS. All Rights Reserved.</p>
+          <p>&copy; {currentYear} KAP LEGAL LLP. All Rights Reserved.</p>
           <div className="footer-bottom-links">
             <a href="#" onClick={goToPrivacyPolicy}>Privacy Policy</a>
             <a href="#" onClick={goToPrivacyPolicy}>Terms of Service</a>

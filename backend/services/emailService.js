@@ -32,7 +32,7 @@ const sendContactNotification = async (contactData) => {
       <h3>Message:</h3>
       <p>${message.replace(/\n/g, '<br>')}</p>
       <hr>
-      <p>This email was sent from the KJ Law Partners website contact form.</p>
+      <p>This email was sent from the KAP LEGAL LLP website contact form.</p>
     `
   };
 

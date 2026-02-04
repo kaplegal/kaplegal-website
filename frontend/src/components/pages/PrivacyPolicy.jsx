@@ -19,7 +19,7 @@ const PrivacyPolicy = () => {
             <ul>
               <li>The information provided on this website is for general informational purposes only and may not be up to date or applicable to your particular legal situation.</li>
               <li>Use of this website does not create a lawyer-client relationship. Any communication through this platform should not be considered confidential.</li>
-              <li>KJ LAW PARTNERS reserves the right to modify or update the website content and terms of use at any time without prior notice.</li>
+              <li>KAP LEGAL LLP reserves the right to modify or update the website content and terms of use at any time without prior notice.</li>
               <li>Unauthorized use of the website's content, including reproduction or distribution, is prohibited.</li>
             </ul>
           </div>
@@ -27,13 +27,13 @@ const PrivacyPolicy = () => {
           <div className="policy-section">
             <h2>Confidentiality Disclaimer</h2>
             <p>
-              While KJ LAW PARTNERS values your privacy and maintains strict confidentiality in client matters, any information you voluntarily submit through this website (e.g., contact forms, emails) will not be treated as confidential until a formal lawyer-client relationship is established. We advise users not to disclose sensitive or confidential information unless explicitly requested to do so by authorized firm representatives through secure channels.
+              While KAP LEGAL LLP values your privacy and maintains strict confidentiality in client matters, any information you voluntarily submit through this website (e.g., contact forms, emails) will not be treated as confidential until a formal lawyer-client relationship is established. We advise users not to disclose sensitive or confidential information unless explicitly requested to do so by authorized firm representatives through secure channels.
             </p>
           </div>
           
           <div className="policy-section">
             <h2>Data Privacy Policy</h2>
-            <p>KJ LAW PARTNERS is committed to protecting your personal data in accordance with applicable privacy laws. This policy outlines how we collect, use, and safeguard your information:</p>
+            <p>KAP LEGAL LLP is committed to protecting your personal data in accordance with applicable privacy laws. This policy outlines how we collect, use, and safeguard your information:</p>
             <ul>
               <li>We collect only the minimum personal information necessary for communication and service provision, such as your name, contact details, and inquiry details.</li>
               <li>Personal data submitted via the website will be used strictly for responding to inquiries and providing legal services if engaged.</li>

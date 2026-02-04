@@ -33,7 +33,7 @@ const OurApproach = () => {
         </svg>
       ),
       content: [
-        'KJ LAW PARTNERS offers expert guidance in corporate law, assisting businesses of all sizes with formation, regulatory compliance, contracts, DRT and MSME matters, and real estate laws. We specialize in drafting and reviewing commercial agreements, conducting due diligence, and advising on legal risks to ensure your enterprise operates within the framework of Indian corporate statutes.',
+        'KAP LEGAL LLP offers expert guidance in corporate law, assisting businesses of all sizes with formation, regulatory compliance, contracts, DRT and MSME matters, and real estate laws. We specialize in drafting and reviewing commercial agreements, conducting due diligence, and advising on legal risks to ensure your enterprise operates within the framework of Indian corporate statutes.',
         'Our client-centric approach helps companies navigate complex legal landscapes effectively, safeguarding their interests while promoting sustainable growth.'
       ]
     },
@@ -92,7 +92,7 @@ const OurApproach = () => {
         </svg>
       ),
       content: [
-        'At KJ LAW PARTNERS, our criminal law practice is founded on decades of experience and a deep understanding of the intricacies of criminal justice. We specialize in defending clients in a wide range of criminal matters, with particular expertise in white collar crimes such as fraud, embezzlement, corporate misappropriation, and financial irregularities. Our rigorous, research-driven approach ensures thorough investigation and strong defense strategies tailored to each case.',
+        'At KAP LEGAL LLP, our criminal law practice is founded on decades of experience and a deep understanding of the intricacies of criminal justice. We specialize in defending clients in a wide range of criminal matters, with particular expertise in white collar crimes such as fraud, embezzlement, corporate misappropriation, and financial irregularities. Our rigorous, research-driven approach ensures thorough investigation and strong defense strategies tailored to each case.',
         'Additionally, we offer sensitive, compassionate, and vigilant representation in cases involving false rape allegations and related sexual offense matters. Understanding both the legal complexities and the personal toll of such cases, we aim to protect the rights and reputations of our clients while ensuring justice is served.',
         'The firm also extends its expertise to other criminal matters, including those involving the Protection of Children from Sexual Offenses (POCSO) Act, providing comprehensive representation from investigation stages to trial.'
       ]
@@ -115,7 +115,7 @@ const OurApproach = () => {
         <div className="practice-content">
           <div className="practice-intro">
             <p>
-              At KJ LAW PARTNERS, we offer comprehensive legal services across multiple practice areas, 
+              At KAP LEGAL LLP, we offer comprehensive legal services across multiple practice areas, 
               combining expertise with a client-centered approach to deliver effective legal solutions.
             </p>
           </div>
