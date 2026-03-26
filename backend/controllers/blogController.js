@@ -4,7 +4,7 @@ const Blog = require('../models/Blog');
 const createSlug = (title) => {
   return title
     .toLowerCase()
-    .replace(/[^\w\s]/g, '')
+    .replace(/[^\w\s-]/g, '')
     .replace(/\s+/g, '-');
 };
 

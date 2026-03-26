@@ -12,6 +12,14 @@ const Blogs = () => {
   // Sample blog data - in a real application, this would come from an API or database
   const blogPosts = [
     {
+      id: 9,
+      title: "Section 85 BNS and the Two-Month Rule: What the Supreme Court's 2025 Landmark Really Means for Families",
+      category: "Criminal Defense",
+      date: "15 MAR 2026",
+      excerpt: "A practical legal analysis of the Supreme Court's 2025 framework on Section 85 BNS, the two-month cooling period, Family Welfare Committees, and what families in Delhi/NCR should do next.",
+      image: "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&w=2070&q=80"
+    },
+    {
       id: 1,
       title: "Navigating Corporate Compliance in 2025",
       category: "Corporate Law",

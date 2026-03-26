@@ -10,6 +10,15 @@ const BlogSection = () => {
   // Get fallback blog posts
   const getFallbackBlogs = () => [
     {
+      id: 9,
+      title: "Section 85 BNS and the Two-Month Rule: What the Supreme Court's 2025 Landmark Really Means for Families",
+      category: "Criminal Defense",
+      date: "15 MAR 2026",
+      content: "A practical legal analysis of Section 85 BNS, the two-month cooling framework, and what Delhi/NCR families must know about arrest safeguards and due process.",
+      image: "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&w=2070&q=80",
+      slug: "section-85-bns-and-the-two-month-rule-what-the-supreme-courts-2025-landmark-really-means-for-families"
+    },
+    {
       id: 1,
       title: "Modern Approaches to Child Custody Arrangements",
       category: "Family Law",
